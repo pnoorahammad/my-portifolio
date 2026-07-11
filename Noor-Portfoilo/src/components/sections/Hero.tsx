@@ -112,7 +112,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-40 animate-pulse-slow"></div>
               <div className="absolute inset-2 bg-background rounded-full"></div>
               <img 
-                src="./noorpic1.jpg" 
+                src="/noorpic1.jpg" 
                 alt="P. Noor Ahammad" 
                 loading="lazy"
                 decoding="async"

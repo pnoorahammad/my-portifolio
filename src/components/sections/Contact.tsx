@@ -53,7 +53,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted mb-1 uppercase tracking-wider">Phone</p>
-                  <a href="tel:+918501062085" className="text-sm font-medium text-white hover:text-primary transition-colors">+91 8501062085</a>
+                  <a href="tel:+916305242294" className="text-sm font-medium text-white hover:text-primary transition-colors">+91 6305242294</a>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-xs text-muted mb-1 uppercase tracking-wider">LinkedIn</p>
-                  <a href="https://linkedin.com/in/pnoorahammad" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-[#0077b5] transition-colors">Connect</a>
+                  <a href="https://www.linkedin.com/in/noorahammad15" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-[#0077b5] transition-colors">Connect</a>
                 </div>
               </div>
 
