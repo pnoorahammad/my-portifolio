@@ -1,31 +1,28 @@
 import { motion } from 'framer-motion';
-import { FaGraduationCap, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 import { SectionHeader } from '../ui/SectionHeader';
 
 export const Education = () => {
   const educationData = [
     {
-      degree: "B.Tech in Computer Science and Engineering",
-      institution: "Nalla Malla Reddy Engineering College",
-      location: "Hyderabad, India",
-      duration: "2021 - 2025",
-      gpa: "7.0 CGPA",
+      degree: "Bachelor of Technology (B.Tech) - Computer Science and Engineering",
+      institution: "Kalasalingam Academy of Research and Education",
+      duration: "2021 – 2025",
+      gpa: "CGPA: 7.06 / 10",
       status: "Pursuing"
     },
     {
-      degree: "Intermediate (MPC)",
-      institution: "Sri Chaitanya Junior College",
-      location: "Hyderabad, India",
-      duration: "2019 - 2021",
-      gpa: "8.3 CGPA",
+      degree: "Intermediate (12th)",
+      institution: "Viswam Junior College",
+      duration: "2019 – 2021",
+      gpa: "Percentage: 69.4%",
       status: "Completed"
     },
     {
-      degree: "Secondary School Certificate",
-      institution: "Sri Chaitanya School",
-      location: "Hyderabad, India",
-      duration: "2018 - 2019",
-      gpa: "9.3 CGPA",
+      degree: "SSC (10th)",
+      institution: "Jeevan Jyothi English Medium High School",
+      duration: "Completed: 2019",
+      gpa: "CGPA: 9.8 / 10",
       status: "Completed"
     }
   ];
@@ -55,9 +52,6 @@ export const Education = () => {
                 <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 text-muted mb-4 font-medium">
                   <span className="flex items-center gap-2">
                     <FaGraduationCap className="text-primary" /> {item.institution}
-                  </span>
-                  <span className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-secondary" /> {item.location}
                   </span>
                 </div>
                 <div className="flex flex-wrap items-center gap-4">

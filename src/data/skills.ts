@@ -1,75 +1,64 @@
 import { IconType } from "react-icons";
 import { 
-  FaPython, FaJava, FaReact, FaHtml5, FaCss3Alt, FaJs, FaGithub, FaDocker, FaDatabase, FaAws, FaLinux, FaRobot
+  FaJava, FaPython, FaJs, FaHtml5, FaCss3Alt, 
+  FaReact, FaBootstrap, FaDatabase, 
+  FaGitAlt, FaGithub, FaBrain, FaRobot
 } from "react-icons/fa";
 import { 
-  SiSpringboot, SiTailwindcss, SiTypescript, SiMysql, SiMongodb, SiFastapi, SiTensorflow, SiPytorch
+  SiCplusplus, SiSpringboot, SiMysql, SiPostman
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { TbApi } from "react-icons/tb";
 import { BiNetworkChart } from "react-icons/bi";
-import { VscTerminalBash } from "react-icons/vsc";
-
-export interface Skill {
-  name: string;
-  icon: IconType;
-  level: number;
-}
 
 export interface SkillCategory {
   title: string;
-  skills: Skill[];
+  skills: { name: string; icon: IconType; level: number }[];
 }
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Languages",
+    title: "Programming Languages",
     skills: [
-      { name: "Python", icon: FaPython, level: 90 },
-      { name: "Java", icon: FaJava, level: 85 },
+      { name: "Java", icon: FaJava, level: 90 },
+      { name: "Python", icon: FaPython, level: 85 },
       { name: "JavaScript", icon: FaJs, level: 80 },
-      { name: "TypeScript", icon: SiTypescript, level: 75 },
+      { name: "C++", icon: SiCplusplus, level: 75 },
+      { name: "HTML", icon: FaHtml5, level: 95 },
+      { name: "CSS", icon: FaCss3Alt, level: 90 },
     ]
   },
   {
-    title: "Frontend",
+    title: "Frameworks",
     skills: [
-      { name: "React.js", icon: FaReact, level: 85 },
-      { name: "HTML5", icon: FaHtml5, level: 95 },
-      { name: "CSS3", icon: FaCss3Alt, level: 90 },
-      { name: "TailwindCSS", icon: SiTailwindcss, level: 85 },
-    ]
-  },
-  {
-    title: "Backend & Frameworks",
-    skills: [
-      { name: "Spring Boot", icon: SiSpringboot, level: 80 },
-      { name: "FastAPI", icon: SiFastapi, level: 85 },
-    ]
-  },
-  {
-    title: "AI, ML & LLMs",
-    skills: [
-      { name: "TensorFlow", icon: SiTensorflow, level: 75 },
-      { name: "PyTorch", icon: SiPytorch, level: 70 },
-      { name: "OpenAI / LLMs", icon: FaRobot, level: 85 },
-      { name: "Neural Networks", icon: BiNetworkChart, level: 80 },
+      { name: "React", icon: FaReact, level: 85 },
+      { name: "Spring Boot", icon: SiSpringboot, level: 85 },
+      { name: "Bootstrap", icon: FaBootstrap, level: 80 },
+      { name: "REST APIs", icon: TbApi, level: 90 },
     ]
   },
   {
     title: "Databases",
     skills: [
       { name: "MySQL", icon: SiMysql, level: 85 },
-      { name: "MongoDB", icon: SiMongodb, level: 80 },
       { name: "SQL", icon: FaDatabase, level: 85 },
     ]
   },
   {
-    title: "Tools, DevOps & OS",
+    title: "Developer Tools",
     skills: [
-      { name: "Git & GitHub", icon: FaGithub, level: 90 },
-      { name: "Docker", icon: FaDocker, level: 75 },
-      { name: "AWS", icon: FaAws, level: 70 },
-      { name: "Linux", icon: FaLinux, level: 85 },
-      { name: "Bash/Shell", icon: VscTerminalBash, level: 80 },
+      { name: "Git", icon: FaGitAlt, level: 90 },
+      { name: "GitHub", icon: FaGithub, level: 90 },
+      { name: "VS Code", icon: VscVscode, level: 95 },
+      { name: "Postman", icon: SiPostman, level: 90 },
+    ]
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      { name: "LLMs", icon: FaRobot, level: 85 },
+      { name: "Machine Learning", icon: FaBrain, level: 80 },
+      { name: "Prompt Engineering", icon: BiNetworkChart, level: 90 },
     ]
   }
 ];

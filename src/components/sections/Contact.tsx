@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaPaperPlane, FaLinkedin, FaGithub, FaDownload } from 'react-icons/fa';
+import { SiLeetcode, SiCodechef } from 'react-icons/si';
 import { SectionHeader } from '../ui/SectionHeader';
 import { useState } from 'react';
 
@@ -33,39 +34,76 @@ export const Contact = () => {
           >
             <div>
               <h3 className="text-3xl font-bold font-heading text-white mb-4">Let's talk about your next project!</h3>
-              <p className="text-muted text-lg">
+              <p className="text-muted text-lg mb-6">
                 Feel free to reach out for collaborations, opportunities, or just a friendly chat.
               </p>
+              
+              <a 
+                href="https://drive.google.com/uc?export=download&id=1WdLxqiZ37D93UiivfrRiN1RmYqvA9j88" 
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-primary/20 text-primary border border-primary/20 hover:border-primary/50 rounded-full transition-all text-sm font-medium shadow-[0_0_15px_rgba(37,99,235,0.2)]"
+              >
+                <FaDownload /> Download Resume
+              </a>
             </div>
 
-            <div className="space-y-6">
-              <div className="glass-card p-6 flex items-center gap-6 group hover:border-primary/50 transition-colors">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shadow-[0_0_15px_rgba(37,99,235,0.2)]">
-                  <FaPhone size={24} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-primary/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                  <FaPhone size={20} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted mb-1 uppercase tracking-wider">Phone</p>
-                  <a href="tel:+918501062085" className="text-lg font-medium text-white hover:text-primary transition-colors">+91 8501062085</a>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">Phone</p>
+                  <a href="tel:+918501062085" className="text-sm font-medium text-white hover:text-primary transition-colors">+91 8501062085</a>
                 </div>
               </div>
 
-              <div className="glass-card p-6 flex items-center gap-6 group hover:border-primary/50 transition-colors">
-                <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-[0_0_15px_rgba(20,184,166,0.2)]">
-                  <FaEnvelope size={24} />
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-secondary/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all">
+                  <FaEnvelope size={20} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted mb-1 uppercase tracking-wider">Email</p>
-                  <a href="mailto:pogakunoor5158@gmail.com" className="text-lg font-medium text-white hover:text-secondary transition-colors">pogakunoor5158@gmail.com</a>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">Email</p>
+                  <a href="mailto:pogakunoor5158@gmail.com" className="text-sm font-medium text-white hover:text-secondary transition-colors">pogakunoor5158@gmail.com</a>
                 </div>
               </div>
 
-              <div className="glass-card p-6 flex items-center gap-6 group hover:border-accent/50 transition-colors">
-                <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-all shadow-[0_0_15px_rgba(139,92,246,0.2)]">
-                  <FaMapMarkerAlt size={24} />
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-[#0077b5]/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#0077b5]/10 flex items-center justify-center text-[#0077b5] group-hover:bg-[#0077b5] group-hover:text-white transition-all">
+                  <FaLinkedin size={20} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted mb-1 uppercase tracking-wider">Location</p>
-                  <p className="text-lg font-medium text-white">Hyderabad, Telangana, India</p>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">LinkedIn</p>
+                  <a href="https://linkedin.com/in/pnoorahammad" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-[#0077b5] transition-colors">Connect</a>
+                </div>
+              </div>
+
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-white/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-white group-hover:text-black transition-all">
+                  <FaGithub size={20} />
+                </div>
+                <div>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">GitHub</p>
+                  <a href="https://github.com/pnoorahammad" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-gray-300 transition-colors">Follow</a>
+                </div>
+              </div>
+
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-yellow-500/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-yellow-500/10 flex items-center justify-center text-yellow-500 group-hover:bg-yellow-500 group-hover:text-white transition-all">
+                  <SiLeetcode size={20} />
+                </div>
+                <div>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">LeetCode</p>
+                  <a href="https://leetcode.com/u/NoorAhammad/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-yellow-500 transition-colors">View Profile</a>
+                </div>
+              </div>
+
+              <div className="glass-card p-5 flex items-center gap-4 group hover:border-[#5B4638]/50 transition-colors">
+                <div className="w-12 h-12 rounded-full bg-[#5B4638]/10 flex items-center justify-center text-[#5B4638] group-hover:bg-[#5B4638] group-hover:text-white transition-all">
+                  <SiCodechef size={20} />
+                </div>
+                <div>
+                  <p className="text-xs text-muted mb-1 uppercase tracking-wider">CodeChef</p>
+                  <a href="https://www.codechef.com/users/kl_9921004570" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-white hover:text-[#8b6b55] transition-colors">View Profile</a>
                 </div>
               </div>
             </div>

@@ -113,8 +113,10 @@ export const Hero = () => {
               <div className="absolute inset-2 bg-background rounded-full"></div>
               <img 
                 src="./noorpic1.jpg" 
-                alt="Pogaku Noor Ahammad" 
-                className="absolute inset-4 object-cover rounded-full border-4 border-white/10 shadow-2xl z-10"
+                alt="P. Noor Ahammad" 
+                loading="lazy"
+                decoding="async"
+                className="w-[280px] h-[280px] md:w-[350px] md:h-[350px] object-cover rounded-full border-4 border-white/10 shadow-[0_0_50px_rgba(37,99,235,0.3)] relative z-10 p-2 bg-background"
               />
               {/* Decorative elements */}
               <div className="absolute top-10 right-0 glass w-16 h-16 rounded-2xl animate-float flex items-center justify-center z-20 shadow-lg border border-white/10">
